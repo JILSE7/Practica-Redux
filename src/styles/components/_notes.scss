@@ -1,0 +1,65 @@
+
+
+.notes__main-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.907);
+}
+
+
+
+
+.notes__appbar{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px 20px;
+
+    background-color: rgba(75, 15, 227, 0.866);
+}
+
+
+
+.notes__content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid black;
+    
+}
+.notes_title-input,
+.notes_textarea{
+    border: none;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+
+.notes_title-input{
+    color: $primary;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.notes_textarea{
+    // border: 0.5px solid #ccc;
+    font-size: 20px;
+    flex: 1 1 auto;
+    resize: none;
+}
+
+.notes__image{
+    box-shadow: 5px 5px 1px #ccc;
+    align-self: center;
+
+    img{
+        width: 350px;
+        height: 350px;
+    }
+}

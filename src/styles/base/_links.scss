@@ -1,0 +1,16 @@
+
+
+.link{
+    text-decoration: none;
+    color: black;   
+    border: none;
+    transition: all 300ms ease-in-out;
+   
+
+    &:hover{
+        color: green;
+        text-decoration: underline;
+        
+    }
+}
+

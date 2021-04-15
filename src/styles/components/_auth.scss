@@ -1,0 +1,144 @@
+
+.auth__main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0px;
+   height: 800px;
+   width: 100vw;
+}
+
+.auth__box-container{
+    background-color: #f2f2f9;
+    border: $border-green;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    height: 80%;
+    padding: 20px;
+  
+    
+}
+
+.auth__header{
+    text-align: center;
+    background-color:$primary;
+    font-size: 35px;
+    height: 70px;
+    line-height: 80px;
+}
+
+.auth__social{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+// img{
+//     display: block;
+//     width: 50px;
+//     height: 50px;
+//     margin: 0 auto;
+
+// }
+
+h3{
+    display: block;
+    margin-bottom: -50px;
+}
+
+form{
+ 
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+
+    width: 80%;
+    height: 30px;
+    background-color: rgb(179, 179, 179);
+    display: block;
+    margin: 0 auto;
+    border:0px;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 400ms ease;
+    margin-bottom: 20px;
+    margin-top: 5px;
+
+    &:focus{
+        border: 1px solid rgb(2, 112, 208);
+        background-color: white;
+        outline: none;
+
+      
+    }
+    
+    &::placeholder{
+        color: rgb(72, 72, 72);
+    }
+}
+
+label{
+    color: green;
+
+    text-align: start;
+    margin-left: 10%;
+    
+}
+
+
+
+//BOTON GOOGLE
+
+.google-btn {
+    cursor: pointer;
+    margin-top: 5px;
+    width: 70%;
+    height: 42px;
+    background-color: $google-blue;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+
+    transition: box-shadow .3s ease;
+
+    .google-icon-wrapper {
+        position: absolute;
+
+
+        width: 40px;
+        height: 41px;
+        border-radius: 2px;
+        background-color: $white;
+    }
+    .google-icon {
+        position: absolute;
+        margin-top: 8px;
+        margin-left: -15px;
+        width: 28px;
+        height: 28px;
+    }
+    .btn-text {
+        text-align: center;
+        margin: 11px 0px 0 20px;
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+    }
+    &:hover {
+        box-shadow: 0 0 6px $google-blue;
+    }
+    &:active {
+        background: $button-active-blue;
+    }
+}
+
+
+
+

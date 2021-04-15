@@ -1,0 +1,21 @@
+@import '../base/_base';
+
+.btn{
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 7px 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all 300ms;
+
+    &:hover{
+        color: darken($color: white, $amount: 30);
+    }
+
+}
+
+.btn-primary{
+    background-color: $primary;
+    border-radius:30px ;
+}
