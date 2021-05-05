@@ -8,7 +8,7 @@ export const NothingSelected = () => {
                 <br/>
             </p>
 
-            <i class="fab fa-jenkins fa-4x mt-1"></i>
+            <i className="fab fa-jenkins fa-4x mt-1"></i>
             
         </div>
     )

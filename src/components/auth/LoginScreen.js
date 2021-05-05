@@ -1,26 +1,55 @@
-import React from 'react'
+import React from 'react';
 
 import {Link} from 'react-router-dom';
+import { useForm } from '../../hooks/useForm';
+
+import {useDispatch, useSelector} from 'react-redux';
+import { login, startGoogleLogin, startLoginEmailPassword } from '../../actions/auth';
 
 export const LoginScreen = () => {
 
+    //useSelector
+    const {loading} = useSelector(state => state.ui);
+
+    const dispatch = useDispatch()
+
+    const [formValues, handleInputChange, reset] = useForm({
+        email: 'said54@gmail.com',
+        password: '123456'
+    })
+
+
+    const {email, password} = formValues
+
+    const handleLogin = (e)=>{
+        e.preventDefault();
+        console.log('me has dado click');
+       dispatch(startLoginEmailPassword(email,password))
+  
+    }
+    
+
+    const handleGoogleLogin = ()=>{
+        dispatch(startGoogleLogin());
+        
+    }
     return (
         <> 
             <h3>Iniciar Sesion</h3>
 
-            <form  autoComplete="off"  list="autocompleteOff" >
+            <form onSubmit={handleLogin}  autoComplete="off"  list="autocompleteOff" >
                 <label className="label-a mt-5">Email</label>
-                <input type="text" placeholder="Ingresa tu Email" name="email" className="in-a" />
+                <input type="text" placeholder="Ingresa tu Email" name="email" value={email} onChange={handleInputChange} className="in-a" />
 
                 <label  className=" l-b ">Contraseña</label>
-                <input type="password" placeholder="Ingresa tu contraseña" name="password"/>
+                <input type="password" placeholder="Ingresa tu contraseña" value={password} name="password" onChange={handleInputChange}/>
 
-                <button disabled className="btn btn-primary mb-1" type="submit">Iniciar Sesion</button>
+                <button disabled={loading}  className="btn btn-primary mb-1" type="submit">Iniciar Sesion</button>
                 <hr/>
             </form>
             <div className="auth__social">
                 <p>Inicia sesion con redes sociales</p>
-                <div className="google-btn">
+                <div className="google-btn" onClick={handleGoogleLogin}>
                     <div className="google-icon-wrapper">
                         <img className="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="google button" />
                     </div>
