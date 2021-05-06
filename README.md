@@ -1,5 +1,6 @@
 # Journall App
 ![journal]('./src/assets/foto.png')
+
 El proyecto jorunal app, en una aplicacion web donde los usuarios pueden hacer:
 ```
 1. Registrarse e Iniciar Secion
