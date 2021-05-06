@@ -14,7 +14,7 @@ El proyecto jorunal app, en una aplicacion web donde los usuarios pueden hacer:
  https://jilse7.github.io/Practica-Redux/
  
 ## Redux
-El proyecto es 100% con fin didactico, realizado en el curso de React de el Intructor Fernando Herrera donde se implementa Redux para el estado global de la aplicacion, y de esta manera poder entender poco a poco el funcionamiento de una "Fuente unica de la verdad"
+El proyecto es 100% con fin didactico, realizado en el curso de React de el Instructor Fernando Herrera donde se implementa Redux para el estado global de la aplicacion, y de esta manera poder entender poco a poco el funcionamiento de una "Fuente unica de la verdad"
 
  
 ![google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png?raw=true)
