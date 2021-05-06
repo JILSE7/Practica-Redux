@@ -1,5 +1,5 @@
 //punto mas alto de la aplicacion despues del index para implementar
-//el provider
+
 import React from 'react'
 import { AppRouter } from './routers/AppRouter'
 
