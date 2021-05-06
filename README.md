@@ -16,8 +16,8 @@ El proyecto es 100% con fin didactico, realizado en el curso de React de el Intr
 ## Prueba la aplicacion 
  https://jilse7.github.io/Practica-Redux/
  
-[google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png?raw=true)
-Al parecer tenemos problemas para realizar la autenticacion con google por el alogamiento de GhPages, porfavor registrate con un correo y una contraseña para un correcto funcionamient0
+![google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png?raw=true)
+Al parecer tenemos problemas para realizar la autenticacion con google por el alogamiento de GhPages, porfavor registrate con un correo y una contraseña para un correcto funcionamiento
 
 
 
