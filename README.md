@@ -1,5 +1,5 @@
 # Journall App
-![journal]('https://github.com/JILSE7/Practica-Redux/blob/master/src/assets/foto.png?raw=true')
+![journal]('https://github.com/JILSE7/Practica-Redux/blob/master/src/assets/foto.png')
 
 
 El proyecto jorunal app, en una aplicacion web donde los usuarios pueden hacer:
