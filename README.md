@@ -1,5 +1,6 @@
 # Journall App
 ![journal]('./src/assets/foto.png')
+https://github.com/JILSE7/API-REST-/blob/dev/AntonioMillan/assets/img/QRs/API_QR.jpeg?raw=true
 
 El proyecto jorunal app, en una aplicacion web donde los usuarios pueden hacer:
 ```
