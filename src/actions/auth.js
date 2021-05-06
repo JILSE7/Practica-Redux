@@ -5,6 +5,7 @@ import { finishLoading, startLoading } from "./ui";
 
 //SweetAlert
 import Swal from 'sweetalert2';
+import { noteLogout } from "./notes";
 
 export const startLoginEmailPassword = (email, password)=>{
     return async(dispatch) =>{
@@ -33,8 +34,9 @@ export const startGoogleLogin = ()=>{
     return (dispatch) =>{
         firebase.auth().signInWithPopup(googleAuthProvider)
             .then(({user}) => {
+                
                 //Login
-                dispatch(login(user.uid, user.displayName))
+                dispatch(login(user.uid, user.displayName, user.photoURL))
             })
     }
 }
@@ -57,11 +59,12 @@ export const Register = (email, password, name)=>{
     }
 }
 
-export const login = (uid, displayName)=> ({
+export const login = (uid, displayName, userPhoto)=> ({
         type: types.login,
         payload: {
             uid,
-            displayName
+            displayName,
+            photo: userPhoto
         }
     
 });
@@ -72,6 +75,8 @@ export const startLogout = ()=>{
     return async(dispatch) => {
         await firebase.auth().signOut();
         dispatch(logOut())
+
+        dispatch(noteLogout());
 
     }
 }

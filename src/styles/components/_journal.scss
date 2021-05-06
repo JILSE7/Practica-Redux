@@ -60,19 +60,20 @@
  &::-webkit-scrollbar-track {
 
     border-radius: 10px;
-    background-color: rgba(75, 15, 227, 0.866);
+    background-color: $primary;
   }
  
   &::-webkit-scrollbar {
     width: 9px;
     border-radius: 10px;
-    background-color: green;
+ 
   }
+  
  
   &::-webkit-scrollbar-thumb {
     border-radius: 10px;
 
-    background-color: rgb(250, 245, 245);
+    background-color: white;
   }
  
 }

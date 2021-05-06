@@ -25,10 +25,10 @@ export const RegisterScreen = () => {
 
     //1 definicion del objeto
     const [formValues, handleInputChange] = useForm({
-        nombre: 'said',
-        email: 'said54@gmail.com',
-        password: '123456',
-        confirm: '123456'
+        nombre: '',
+        email: '',
+        password: '',
+        confirm: ''
     })
 
     //2 extraccion de las variables
@@ -73,7 +73,7 @@ export const RegisterScreen = () => {
     }
 
     return (
-        <> 
+        <div className="animate__animated animate__fadeIn"> 
         <h3>Registrate</h3>
 
         <form  autoComplete="off"  list="autocompleteOff" onSubmit={handleSubmit} >
@@ -101,6 +101,6 @@ export const RegisterScreen = () => {
         
 
         
-    </>
+    </div>
     )
 }

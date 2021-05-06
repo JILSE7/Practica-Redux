@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import { useForm } from '../../hooks/useForm';
 
 import {useDispatch, useSelector} from 'react-redux';
-import { login, startGoogleLogin, startLoginEmailPassword } from '../../actions/auth';
+import { startGoogleLogin, startLoginEmailPassword } from '../../actions/auth';
 
 export const LoginScreen = () => {
 
@@ -13,9 +13,9 @@ export const LoginScreen = () => {
 
     const dispatch = useDispatch()
 
-    const [formValues, handleInputChange, reset] = useForm({
-        email: 'said54@gmail.com',
-        password: '123456'
+    const [formValues, handleInputChange] = useForm({
+        email: '',
+        password: ''
     })
 
 
@@ -34,10 +34,10 @@ export const LoginScreen = () => {
         
     }
     return (
-        <> 
+        <div className="animate__animated animate__fadeIn"> 
             <h3>Iniciar Sesion</h3>
 
-            <form onSubmit={handleLogin}  autoComplete="off"  list="autocompleteOff" >
+            <form  onSubmit={handleLogin}  autoComplete="off"  list="autocompleteOff" >
                 <label className="label-a mt-5">Email</label>
                 <input type="text" placeholder="Ingresa tu Email" name="email" value={email} onChange={handleInputChange} className="in-a" />
 
@@ -62,6 +62,6 @@ export const LoginScreen = () => {
             </div>
 
             
-        </>
+        </div>
     )
 }
